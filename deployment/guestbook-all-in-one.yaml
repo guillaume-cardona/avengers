@@ -73,7 +73,7 @@ spec:
   template:
     metadata:
       labels:
-        app: app_avenger
+        app: avengers
         tier: frontend-avengers
     spec:
       containers:
