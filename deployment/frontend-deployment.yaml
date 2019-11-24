@@ -15,8 +15,8 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: avengers
-        image: mc-cainss.github.io/avengers
+      - name: php-redis
+        image: mccains/avengers:latest
         resources:
           requests:
             cpu: 100m
