@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: mc-cainss.io/avengers:latest
+        image: mc-cainss.github.io/avengers
         resources:
           requests:
             cpu: 100m
