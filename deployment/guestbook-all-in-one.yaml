@@ -46,25 +46,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis-slave
-  labels:
-    app: redis
-    tier: backend
-    role: slave
-spec:
-  ports:
-  - port: 6379
-  selector:
-    app: redis
-    tier: backend
-    role: slave
----
-apiVersion: v1
-kind: Service
-metadata:
   name: avengers
   labels:
-    app: guestbook
+    app: app_avenger
     tier: avengers
 spec:
   # if your cluster supports it, uncomment the following to automatically create
@@ -73,7 +57,7 @@ spec:
   ports:
   - port: 80
   selector:
-    app: guestbook
+    app: app_avenger
     tier: avengers
 ---
 apiVersion: apps/v1 #  for k8s versions before 1.9.0 use apps/v1beta2  and before 1.8.0 use extensions/v1beta1
@@ -83,13 +67,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: guestbook
+      app: app_avenger
       tier: avengers
   replicas: 3
   template:
     metadata:
       labels:
-        app: guestbook
+        app: app_avenger
         tier: avengers
     spec:
       containers:
