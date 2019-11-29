@@ -11,7 +11,7 @@ Simply type:
 
       gradlew build
 
-or if you have gradle installed on your machine and in your classpath:On va essayer
+or if you have gradle installed on your machine and in your classpath:
 
       gradle build
 
