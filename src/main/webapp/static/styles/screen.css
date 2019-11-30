@@ -11,6 +11,11 @@
 
 ----------------------------------------------------------------------- */
 
+@font-face {
+    font-family: "Aveng";
+    src: url("../polices/heroesassembleboldexpandital2.ttf") format("truetype");
+}
+
 
 /* reset.css */
 html,titleHome, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
@@ -262,6 +267,7 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 p + p {text-indent:2em;margin-top:-1.5em;}
 form p + p {text-indent:0;}
 .alt {color:#666;font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;font-style:italic;font-weight:normal;}
+.altTitle{color:#ffff;font-family:"Aveng"}
 .dquo {margin-left:-.5em;}
 p.incr, .incr p {font-size:10px;line-height:1.44em;margin-bottom:1.5em;}
 .caps {font-variant:small-caps;letter-spacing:1px;text-transform:lowercase;font-size:1.2em;line-height:1%;font-weight:bold;padding:0 2px;}
